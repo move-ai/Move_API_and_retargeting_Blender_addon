@@ -1,5 +1,9 @@
 # Move.ai API and retargeting Blender add-on
 
+[![Blender API](data/readme/addon_preview.gif)](https://www.youtube.com/watch?v=pCVHn_bMG_s)
+
+[Blender API and retargeting video tutorial](https://www.youtube.com/watch?v=pCVHn_bMG_s)
+
 ## Installation
 
 1. Go to Edit > Preferences... > Add-ons

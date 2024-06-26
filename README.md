@@ -6,10 +6,11 @@
 
 ## Installation
 
-1. Go to Edit > Preferences... > Add-ons
-2. Click Install...
-3. Select downloaded .zip archive move_sdk_*.zip
-4. Click the check box to activate the add-on
+1. Download the add-on from here: https://github.com/move-ai/Move_API_and_retargeting_Blender_addon/releases
+2. Go to Edit > Preferences... > Add-ons
+3. Click Install...
+4. Select downloaded .zip archive move_sdk_*.zip
+5. Click the check box to activate the add-on (if the add-on doesn't display in the list, input `move sdk` to find it)
 
 ## Usage
 

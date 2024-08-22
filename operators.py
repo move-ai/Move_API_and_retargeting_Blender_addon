@@ -89,7 +89,11 @@ class MOVE_SDK_OT_run(Operator):
         self._output_dir = context.scene.move_sdk.general.output_dir
 
         video_file_id = self._move.create_files(self._input_video_path)
-        take = self._move.create_take(video_file_id)
+        video_format = "MP4"
+
+        # device_label is only a placeholder in singlecam
+        device_label = "device-01"
+        take = self._move.create_take(video_file_id, device_label, video_format)
         self._job = self._move.create_job(take.id)
         self._attempts = 0
 

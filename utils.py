@@ -9,6 +9,7 @@ from mathutils import Matrix
 import numpy as np
 import addon_utils
 from pathlib import Path
+from move_ugc.schemas.sources import SourceIn
 
 class MoveAPI:
     def __init__(self, api_key, endpoint_url=None):
@@ -26,11 +27,11 @@ class MoveAPI:
 
         return video_file.id
 
-    def create_take(self, video_file_id, metadata=None):
+    def create_take(self, video_file_id,  device_label, format, metadata=None):
         if metadata is None:
             metadata = {"test": "test"}
-        take = self.client.takes.create(
-            video_file_id=video_file_id,
+        take = self.client.takes.create_singlecam(
+            sources=[SourceIn(file_id=video_file_id, device_label=device_label, format=format)],
             metadata=metadata,
         )
         return take

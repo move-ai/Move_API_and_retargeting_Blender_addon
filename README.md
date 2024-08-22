@@ -68,4 +68,4 @@ We use [Blender Studio's](https://studio.blender.org/) resources for testing and
 
 These files were used in the production of the short movie [Wing it!](https://youtu.be/u9lj-c29dxI) and are distributed with the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license.
 
-The original files are slightly changed (optimized) for the better performance.
+The original files are slightly changed (optimized) for better performance.

@@ -37,7 +37,7 @@ Our retargeter is robust enough and works with any rigs given that their current
 ![Alt text](data/readme/retargeting.png)
 
 1. Select the `Source rig` and `Target rig`
-2. Map the bones or alternatively use the mapping presets (you can save, load, remove, rename them)
+2. Map the bones or alternatively use the mapping presets (you can save, load, remove, and rename them)
 3. Click `Retarget` button
 4. If you want to remove the retargeting, click `Clear Constraints` button
 

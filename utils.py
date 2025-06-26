@@ -41,7 +41,7 @@ class MoveAPI:
         return take
 
     def create_job(self, take_id):
-        job = self.client.jobs.create(take_id=take_id, metadata={"test": "test_job"})
+        job = self.client.jobs.create_singlecam(take_id=take_id, metadata={"test": "test_job"})
         return job
 
     def get_job(self, job_id, expand=False):

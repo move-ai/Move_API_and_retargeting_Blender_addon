@@ -62,7 +62,12 @@ class MOVE_SDK_OT_run(Operator):
                 print(self._outputs)
                 context.window_manager.progress_end()
                 if context.scene.move_sdk.general.import_fbx:
-                    bpy.ops.import_scene.fbx(filepath=self._outputs[4])
+                    # Find the first .fbx file in the outputs
+                    fbx_files = [f for f in self._outputs if f.endswith('.fbx')]
+                    if fbx_files:
+                        bpy.ops.import_scene.fbx(filepath=fbx_files[0])
+                    else:
+                        self.report({"INFO"}, "No FBX files found in outputs")
                 context.window_manager.event_timer_remove(self._timer)
                 context.workspace.status_text_set(None)  # Clear status bar
                 self.report({"INFO"}, "Job completed successfully")

@@ -252,6 +252,7 @@ class MOVE_SDK_OT_retarget(Operator):
         offset_constraint.owner_space = "LOCAL"
         offset_constraint.map_to = "ROTATION"
         offset_constraint.mix_mode_rot = "AFTER"
+        offset_constraint.to_euler_order = 'XYZ'
 
         offset_constraint.to_min_x_rot = offset_rot[0]
         offset_constraint.to_min_y_rot = offset_rot[1]
